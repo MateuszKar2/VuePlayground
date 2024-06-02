@@ -7,6 +7,7 @@
     <WatchFive/>
     <ConditionalRendering/>
     <BindSeven/>
+    <RenderingListEight/>
   </div>
 </template>
 
@@ -17,7 +18,8 @@
 // import ComputedPropertiesFour from './components/ComputedPropertiesFour';
 // import WatchFive from './components/WatchFive.vue';
 // import ConditionalRendering from './components/ConditionalRenderingSix.vue';
-import BindSeven from './components/BindSeven.vue';
+// import BindSeven from './components/BindSeven.vue';
+import RenderingListEight from './components/RenderingListEight'
 export default {
   name: 'App',
 
@@ -29,7 +31,9 @@ export default {
     // ComputedPropertiesFour,
     // WatchFive,
     // ConditionalRendering,
-    BindSeven,
+    // BindSeven,
+    RenderingListEight,
+
   }
 }
 </script>
