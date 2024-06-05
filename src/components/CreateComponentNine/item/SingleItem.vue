@@ -7,13 +7,13 @@
     <div  class="single-item"
             > <!--musi być unkalny klucz w postaci id-->
             <p>Candidate: {{ index + 1 }}</p>
-            <p>Name: {{ candidate.firstName }} {{ candidate.lastName }}</p>
-            <p>Age: {{ candidate.age }}</p>
-            <p v-if="candidate.party">Party: {{ candidate.party }}</p>
-            <div v-if="candidate.opinionPool"> 
+            <p>Name: {{ item.firstName }} {{ item.lastName }}</p>
+            <p>Age: {{ item.age }}</p>
+            <p v-if="item.party">Party: {{ item.party }}</p>
+            <div v-if="item.opinionPool"> 
                 Opinion Pool:
-                <progress max="100" :value="candidate.opinionPool"></progress> 
-                {{ candidate.opinionPool}}%
+                <progress max="100" :value="item.opinionPool"></progress> 
+                {{ item.opinionPool}}%
             </div>
         </div>
 </template>
@@ -27,22 +27,17 @@
                 type: Object,
                 default: () => ({}),
             }
+            index: {
+                type: Number,
+                default: 0,
+            }
         }
     }
 </script>
-<style lang="scss" scoped>
-        .items-list {
-        font-family: Arial;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 25px;
-        max-width: 1200px;
-        margin: 0 auto;
+<style lang="scss" scoped/>
 
-    &__card {
+        .single-item  {
         border: 1px solid black;
         padding: 10px;
-
-    }
     }
 </style>

@@ -50,19 +50,15 @@ components: {
 
 </script>
 
-<style lang="scss" scoped>
-    .items-list {
-        font-family: Arial;
+</script>
+<style lang="scss" scoped/>
+
+        .item-list {
+        font-family: arial;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 25px;
         max-width: 1200px;
         margin: 0 auto;
-
-    &__card {
-        border: 1px solid black;
-        padding: 10px;
-
-    }
-    }
+     }
 </style>
