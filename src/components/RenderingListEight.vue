@@ -7,8 +7,8 @@
 
 <script>
     import {ref, computed} from 'vue';
-    import ItemList from './item/ItemList'
-
+    import ItemList from './CreateComponentNine/ItemList.vue'
+    
     export default {
         name: "RenderingListEight",
         components: {
