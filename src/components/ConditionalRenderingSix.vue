@@ -18,7 +18,7 @@ wszystko bedzie renderowane w konsoli ale niespełniające warunki otrzymają kl
     import {ref} from 'vue';
 
     export default {
-        name: "ConditionalRendering",
+        name: "ConditionalRenderingSix",
         setup() {
             const masks = ref(5);
 
