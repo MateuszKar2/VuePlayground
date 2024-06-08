@@ -1,12 +1,15 @@
 <!--Tworzenie komponentów-->
 
 <template>
-    <div  class="items-list">
+    <div  class="item-list">
         <SingleItem
-            v-for="(item,index) in items" 
+            v-for="(item, index) in items" 
             :key="item.id"
             :index= "index"
             :item="item"
+            :first-name="item.firstName"
+            :last-name="item.lastName"
+            :age="item.age"
             />
     </div>
 </template>
@@ -14,16 +17,12 @@
 <!-- Są różne sposoby na zapisy propsów, najlepszy jest poniżej ponieważ możemy określić type propsa -->
 <script>
 
-import SingleItem from './item/SingleItem';
+import SingleItem from './item/SingleItem.vue';
 
 
     export default {
-        name: 'ItemList',
-     
-        
-components: {
-    SingleItem
-},
+        name: 'ItemList',        
+        components: {SingleItem},
 
         props: {
             items: {
@@ -50,8 +49,7 @@ components: {
 
 </script>
 
-</script>
-<style lang="scss" scoped/>
+<style lang="scss" scoped>
 
         .item-list {
         font-family: arial;
