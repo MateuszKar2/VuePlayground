@@ -2,6 +2,7 @@
     <button class="button">
         <slot>
 
+            
         <slot name="text">
            {{ text }}
         </slot>
