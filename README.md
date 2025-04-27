@@ -1,4 +1,4 @@
-# VuePlayground
+ # VuePlayground
 
 **VuePlayground** is a test project created to explore and familiarize myself with the fundamental concepts of Vue.js. The project serves as a playground for learning and experimenting with Vue's core features, such as components, directives, state management, routing, and more.
 
